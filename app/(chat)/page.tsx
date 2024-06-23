@@ -6,7 +6,11 @@ import { Session } from '@/lib/types'
 import { getMissingKeys } from '@/app/actions'
 
 export const metadata = {
-  title: 'Next.js AI Chatbot'
+  title: {
+    default: 'THE XIRR',
+    template: `XIRR INVESTMENT AI`
+  },
+  description: 'An AI-powered Investment Tool to explore alternate Investment.',
 }
 
 export default async function IndexPage() {
