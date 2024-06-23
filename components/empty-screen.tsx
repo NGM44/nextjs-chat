@@ -1,36 +1,23 @@
-import { UseChatHelpers } from 'ai/react'
-
-import { Button } from '@/components/ui/button'
 import { ExternalLink } from '@/components/external-link'
-import { IconArrowRight } from '@/components/ui/icons'
 
 export function EmptyScreen() {
   return (
     <div className="mx-auto max-w-2xl px-4">
       <div className="flex flex-col gap-2 rounded-lg border bg-background p-8">
-        <h1 className="text-lg font-semibold">
-          Welcome to Next.js AI Chatbot!
-        </h1>
+        <h1 className="text-lg font-semibold">Welcome to XIRR.AI</h1>
         <p className="leading-normal text-muted-foreground">
-          This is an open source AI chatbot app template built with{' '}
-          <ExternalLink href="https://nextjs.org">Next.js</ExternalLink>, the{' '}
-          <ExternalLink href="https://sdk.vercel.ai">
-            Vercel AI SDK
-          </ExternalLink>
-          , and{' '}
-          <ExternalLink href="https://vercel.com/storage/kv">
-            Vercel KV
-          </ExternalLink>
-          .
+          This is an most reliable AI Bot for alternate investment supported
+          from
+          <ExternalLink href="https://nextjs.org">THE XIRR</ExternalLink>
         </p>
         <p className="leading-normal text-muted-foreground">
-          It uses{' '}
+          It uses Alternate Investment AI Model built by
           <ExternalLink href="https://vercel.com/blog/ai-sdk-3-generative-ui">
-            React Server Components
+            THE XIRR
           </ExternalLink>{' '}
-          to combine text with generative UI as output of the LLM. The UI state
-          is synced through the SDK so the model is aware of your interactions
-          as they happen.
+          to combine industry knowledge of investment and the power of AI to
+          provide unorganic returns for your investments. Through this AI you
+          can explorer limitless opportunities of Alternative Investment.
         </p>
       </div>
     </div>

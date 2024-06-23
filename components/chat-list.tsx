@@ -15,6 +15,8 @@ export function ChatList({ messages, session, isShared }: ChatList) {
     return null
   }
 
+  console.log('messages', messages);
+
   return (
     <div className="relative mx-auto max-w-2xl px-4">
       {!isShared && !session ? (
@@ -42,6 +44,7 @@ export function ChatList({ messages, session, isShared }: ChatList) {
       ) : null}
 
       {messages.map((message, index) => (
+        // <p key={index}>{index}</p>
         <div key={message.id}>
           {message.display}
           {index < messages.length - 1 && <Separator className="my-4" />}
