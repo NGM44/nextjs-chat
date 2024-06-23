@@ -83,7 +83,7 @@ export default function Feature() {
         Meet your AI Agents
       </p>
       {featureData.map(feature => (
-        <FeatureCard feature={feature} />
+        <FeatureCard key={feature.heading} feature={feature} />
       ))}
     </div>
   )
