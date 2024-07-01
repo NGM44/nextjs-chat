@@ -5,10 +5,15 @@ import { useTheme } from 'next-themes'
 
 import { Button } from '@/components/ui/button'
 import { IconMoon, IconSun } from '@/components/ui/icons'
+import { useEffect } from 'react'
 
 export function ThemeToggle() {
   const { setTheme, theme } = useTheme()
   const [_, startTransition] = React.useTransition()
+
+  useEffect(()=>{
+    setTheme('dark');
+  },[])
 
   return (
     <Button
@@ -16,7 +21,7 @@ export function ThemeToggle() {
       size="icon"
       onClick={() => {
         startTransition(() => {
-          setTheme(theme === 'light' ? 'dark' : 'light')
+          setTheme('dark')
         })
       }}
     >

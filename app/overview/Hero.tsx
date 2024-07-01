@@ -62,7 +62,7 @@ export default function HeroPage() {
               fill="url(#83fd4e5a-9d52-42fc-97b6-718e5d7ee527)"
             />
           </svg>
-          <div className="mx-auto max-w-7xl px-6 py-8 sm:py-12 lg:flex lg:items-center lg:gap-x-10 lg:px-8 lg:py-12">
+          <div className="mx-auto max-w-7xl px-6 py-8 sm:py-12 lg:flex lg:items-center lg:gap-x-10 lg:px-8 lg:py-40">
             <div className="mx-auto max-w-2xl lg:mx-0 lg:flex-auto">
               <div className="flex">
                 <div className="relative flex items-center gap-x-4 rounded-full px-4 py-1 text-sm leading-6 text-gray-100 ring-1 ring-gray-100 hover:ring-gray-100">
@@ -91,7 +91,7 @@ export default function HeroPage() {
               </div>
             </div>
             <div className="mt-16 sm:mt-24 lg:mt-0 lg:flex-shrink-0 lg:flex-grow">
-              <svg
+              {/* <svg
                 viewBox="0 0 366 729"
                 role="img"
                 className="mx-auto w-[22.875rem] max-w-full drop-shadow-xl"
@@ -121,7 +121,7 @@ export default function HeroPage() {
                     alt=""
                   />
                 </foreignObject>
-              </svg>
+              </svg> */}
             </div>
           </div>
         </div>
