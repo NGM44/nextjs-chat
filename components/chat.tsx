@@ -11,6 +11,7 @@ import { Message, Session } from '@/lib/types'
 import { usePathname, useRouter } from 'next/navigation'
 import { useScrollAnchor } from '@/lib/hooks/use-scroll-anchor'
 import { toast } from 'sonner'
+import { useTheme } from 'next-themes'
 
 export interface ChatProps extends React.ComponentProps<'div'> {
   initialMessages?: Message[]
@@ -20,6 +21,13 @@ export interface ChatProps extends React.ComponentProps<'div'> {
 }
 
 export function Chat({ id, className, session, missingKeys }: ChatProps) {
+
+  const { setTheme, theme } = useTheme()
+  useEffect(() => {
+    console.log('LOG')
+    setTheme('dark')
+  }, [])
+
   const router = useRouter()
   const path = usePathname()
   const [input, setInput] = useState('')
