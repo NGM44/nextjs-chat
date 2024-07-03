@@ -31,8 +31,9 @@ async function UserOrLogin() {
         </>
       ) : (
         <Link href="/new" rel="nofollow">
-          <IconNextChat className="size-6 mr-2 dark:hidden" inverted />
-          <IconNextChat className="hidden size-6 mr-2 dark:block" />
+          {/* <SketchLogoIcon className="mr-2" /> */}
+          <SketchLogoIcon className="size-6 mr-2 dark:hidden" />
+          <SketchLogoIcon className="hidden size-6 mr-2 dark:block" />
         </Link>
       )}
       <div className="flex items-center">
@@ -58,7 +59,7 @@ export function Header() {
         </React.Suspense>
       </div>
       <div className="flex items-center justify-end space-x-2">
-        <a href="overview" target="_blank" className={cn(buttonVariants())}>
+        <a href="/" target="_blank" className={cn(buttonVariants())}>
           <SketchLogoIcon className="mr-2" />
           <span className="hidden sm:block font-semibold">THE XIRR</span>
           <span className="sm:hidden">THE XIRR</span>
