@@ -12,13 +12,25 @@ export default function FeatureCard({
           {feature.showLeft && (
             <div className="mt-2 w-full max-w-2xl xl:-mb-8 xl:w-96 xl:flex-none">
               <div className="relative aspect-square h-full md:-mx-8 xl:mx-0 xl:aspect-auto">
-                <video
+                {/* <video
                   src={feature.videoLink}
                   playsInline={true}
                   autoPlay={true}
                   className="h-96"
                   muted
-                ></video>
+                ></video> */}
+                  {feature.image ? (
+                 
+                 <img src={feature.videoLink}  className="h-96 mt-16 rounded-2xl" />
+               ) : (
+                 <video
+                   src={feature.videoLink}
+                   playsInline={true}
+                   autoPlay={true}
+                   className="h-96"
+                   muted
+                 ></video>
+               )}
               </div>
             </div>
           )}
@@ -54,13 +66,18 @@ export default function FeatureCard({
           {!feature.showLeft && (
             <div className="mt-2 w-full max-w-2xl xl:-mb-8 xl:w-96 xl:flex-none">
               <div className="relative aspect-square h-full md:-mx-8 xl:mx-0 xl:aspect-auto">
-                <video
-                  src={feature.videoLink}
-                  playsInline={true}
-                  autoPlay={true}
-                  className="h-96"
-                  muted
-                ></video>
+                {feature.image ? (
+                 
+                  <img src={feature.videoLink}  className="h-96" />
+                ) : (
+                  <video
+                    src={feature.videoLink}
+                    playsInline={true}
+                    autoPlay={true}
+                    className="h-96"
+                    muted
+                  ></video>
+                )}
               </div>
             </div>
           )}

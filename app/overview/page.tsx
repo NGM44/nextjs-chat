@@ -4,6 +4,7 @@ import Feature from './Features'
 import FAQ from './Faq'
 import Footer from './Footer'
 import HeroPage from './Hero'
+import CTAFORWHATSAPP from './CTA'
 
 const page = () => {
 
@@ -13,6 +14,7 @@ const page = () => {
       <HeroPage />
       {/* <Testimonials /> */}
       <Feature />
+      <CTAFORWHATSAPP />
       <FAQ />
       <Footer />
     </div>

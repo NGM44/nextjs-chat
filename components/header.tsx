@@ -53,17 +53,24 @@ async function UserOrLogin() {
 export function Header() {
   return (
     <header className="sticky top-2 mx-8 rounded-lg z-50 flex items-center justify-between h-16 px-4 border-b shrink-0 bg-gradient-to-b from-background/10 via-background/50 to-background/80 backdrop-blur-xl">
-      <div className="flex items-center">
+      {/* <div className="flex items-center">
         <React.Suspense fallback={<div className="flex-1 overflow-auto" />}>
           <UserOrLogin />
         </React.Suspense>
-      </div>
+      </div> */}
       <div className="flex items-center justify-end space-x-2">
         <a href="/" target="_blank" className={cn(buttonVariants())}>
           <SketchLogoIcon className="mr-2" />
           <span className="hidden sm:block font-semibold">THE XIRR</span>
           <span className="sm:hidden">THE XIRR</span>
         </a>
+      </div>
+      <div className="gap-8 flex flex-row">
+      <a href="#Home">Home</a>
+        <a href="#diversify">Diversify</a>
+        <a href="#Offerings">Offerings</a>
+        <a href="#Comparison">Comparison</a>
+        <a href="#faq">Faq</a>
       </div>
     </header>
   )

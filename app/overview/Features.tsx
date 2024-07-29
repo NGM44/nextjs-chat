@@ -1,4 +1,6 @@
 import FeatureCard from './card'
+import Dashboard from './Investment'
+import Dashboard2 from './Investment2'
 
 export type FeatureDataModel = {
   heading: string
@@ -7,53 +9,46 @@ export type FeatureDataModel = {
   videoLink: string
   showLeft: boolean
   color: string
+  image: boolean
 }
 const featureData: FeatureDataModel[] = [
   {
-    heading: 'Data-Driven Trading Strategies',
+    heading: 'ACCESS PREMIUM OPPORTUNITIES',
     description:
-      'Give me a short term trade strategy for $NVDA with entry and exit points',
-    author: 'quant pro ',
+      'Invest in high quality, alternative investments beating the normal industry returns. Our tech enables you to compare across 1000+ alternate investment opportunities across 50+ platforms',
+    author: 'CURATED INVESTMENTS',
     videoLink:
-      'https://framerusercontent.com/assets/gt9ceHJuUWhwK8FhkoAXCeRgkLs.mp4',
+      'https://img.freepik.com/premium-photo/stock-exchange-market-economy-financial-dark-theme-global-business-investment_733288-63.jpg',
     showLeft: true,
+    image: true,
     color: 'text-[#79C6F0]'
   },
   {
-    heading: 'Your AI Portfolio Manager',
+    heading: 'MEET YOUR AI CONCIERGE',
     description:
-      'Can you create a portfolio with 70% stocks and 30% bonds using low cost ETFs',
-    author: 'Strategy Whiz',
+      'Use XIRR AI for bespoke answers to your investment strategies in alternative assets, designed to boost your confidence in your alternative investment strategy',
+    author: 'YOUR NEW SUPERPOWER',
     videoLink:
       'https://framerusercontent.com/assets/wWzW6Xt0kZViREVLEpFEXZUrQ8.mp4',
     showLeft: false,
+    image: false,
     color: 'text-[#F1953F]'
   },
 
   {
-    heading: 'Perform deep Equity Research',
+    heading: 'JOIN A PRIVATE ALTERNATE INVESTMENT COMMUNITY',
     description:
-      'What If you were Warren Buffet, would you buy Ford? What would you buy in other case?',
-    author: 'ANALYST pro',
-    videoLink:
-      'https://framerusercontent.com/assets/2I3ZYAG0G1xzMsmG5cLzAJUYfc4.mp4',
+      'Our membership is a diverse group of individuals and family offices passionate about learning alternate investment opportunities in India, share the perspectives about the the risk and return profile of this relatively new asset class.',
+    author: 'An EXCLUSIVE NETWORK',
+    videoLink: '/investment.jpeg',
+    image: true,
     showLeft: true,
     color: 'text-[#F2476F]'
-  },
-  {
-    heading: 'Analyze News Sentiment',
-    description:
-      "Give me the last numbers from Palo Alto Networks' earnings from yesterday",
-    author: 'NEWS GURU ',
-    videoLink:
-      'https://framerusercontent.com/assets/kk6Aqjcn2smPu5fLAytvzv6la8.mp4',
-    showLeft: false,
-    color: 'text-[#7FDA68]'
   }
 ]
 export default function Feature() {
   return (
-    <div className="relative isolate bg-gray-900 pb-32 pt-24 sm:pt-32">
+    <div id="Offerings" className="relative isolate bg-gray-900 pb-32 pt-24 sm:pt-32">
       <div
         className="absolute inset-x-0 top-1/2 -z-10 -translate-y-1/2 transform-gpu overflow-hidden opacity-30 blur-3xl"
         aria-hidden="true"
@@ -79,8 +74,10 @@ export default function Feature() {
         />
       </div>
 
+      {/* <Dashboard /> */}
+      {/* <Dashboard2 /> */}
       <p className="mt-2 mx-8 md:mx-32 text-4xl font-bold tracking-tight text-gray-200 sm:text-4xl">
-        Meet your AI Agents
+        What we offer
       </p>
       {featureData.map(feature => (
         <FeatureCard key={feature.heading} feature={feature} />
