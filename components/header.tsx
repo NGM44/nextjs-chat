@@ -65,11 +65,11 @@ export function Header() {
           <span className="sm:hidden">THE XIRR</span>
         </a>
       </div>
-      <div className="gap-8 flex flex-row">
+      <div className="gap-8 sm:flex flex-row hidden">
       <a href="#Home">Home</a>
         <a href="#diversify">Diversify</a>
-        <a href="#Offerings">Offerings</a>
         <a href="#Comparison">Comparison</a>
+        <a href="#Offerings">Offerings</a>
         <a href="#faq">Faq</a>
       </div>
     </header>
