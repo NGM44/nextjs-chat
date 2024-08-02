@@ -15,15 +15,15 @@ const page = () => {
     <div>
       <HeroPage />
       {/* <Testimonials /> */}
-      <CTAFORWHATSAPP />
+      {/* <CTAFORWHATSAPP /> */}
       {/* <Feature /> */}
 
-      <Dashboard2 />
       <div id="Offerings">
         <CTA1 />
         <CTA2 />
         <CTA3 />
       </div>
+      <Dashboard2 />
 
       <FAQ />
 
