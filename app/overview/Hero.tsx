@@ -71,16 +71,16 @@ export default function HeroPage() {
                 <div className="relative flex items-center gap-x-4 rounded-full px-4 py-1 text-sm leading-6 text-gray-100 ring-1 ring-gray-100 hover:ring-gray-100">
                   <SketchLogoIcon />
                   <span className="font-semibold text-white">
-                    Investment AI Tool
+                    Alternative Investment
                   </span>
                 </div>
               </div>
-              <h1 className="mt-10 max-w-lg text-4xl font-bold tracking-tight text-gray-9100 sm:text-6xl">
-                XIRR-AI Alternate Investment Tool
+              <h1 className="mt-10 max-w-2xl text-4xl font-bold tracking-tight text-gray-9100 sm:text-6xl">
+                XIRR - An Alternate Investment Platform
                 {/* Diversify Your Portfolio */}
               </h1>
               <p className="mt-6 text-lg leading-8 text-gray-200">
-                The XIRR’s model merges industry investment expertise to deliver
+                The XIRR’s Artificial Intelligent model merges industry investment expertise to deliver
                 exceptional, unorganic returns. Discover limitless opportunities
                 in alternative investments with this innovative solution.
               </p>
