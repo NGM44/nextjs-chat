@@ -80,7 +80,7 @@ export default function HeroPage() {
                 {/* Diversify Your Portfolio */}
               </h1>
               <p className="mt-6 text-lg leading-8 text-gray-200">
-              XIRR's artificial intelligence model combines industry investment expertise to deliver exceptional, strategic results.
+              XIRR&apos;s artificial intelligence model combines industry investment expertise to deliver exceptional, strategic results.
               </p>
               <div className="mt-10 flex flex-row whitespace-nowrap gap-4 justify-start sm:items-center  gap-x-6">
                 <a
