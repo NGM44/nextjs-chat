@@ -23,6 +23,7 @@ const page = () => {
         <CTA2 />
         <CTA3 />
       </div>
+      {/* <Opportunities /> */}
       <Dashboard2 />
 
       <FAQ />
