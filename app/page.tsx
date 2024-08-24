@@ -9,6 +9,7 @@ import Dashboard2 from './overview/Investment2'
 import CTA1 from './overview/CTA1'
 import CTA2 from './overview/CTA2'
 import CTA3 from './overview/CTA3'
+import { FloatingDockDemo } from './overview/Social'
 
 const page = () => {
   return (
@@ -17,7 +18,7 @@ const page = () => {
       {/* <Testimonials /> */}
       {/* <CTAFORWHATSAPP /> */}
       {/* <Feature /> */}
-
+{/* <FloatingDockDemo /> */}
       <div id="Offerings">
         <CTA1 />
         <CTA2 />

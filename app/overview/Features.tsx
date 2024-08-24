@@ -36,9 +36,9 @@ const featureData: FeatureDataModel[] = [
   },
 
   {
-    heading: 'JOIN A PRIVATE ALTERNATE INVESTMENT COMMUNITY',
+    heading: 'JOIN A PRIVATE ALTERNATIVE INVESTMENT COMMUNITY',
     description:
-      'Our membership is a diverse group of individuals and family offices passionate about learning alternate investment opportunities in India, share the perspectives about the the risk and return profile of this relatively new asset class.',
+      'Our community is a diverse group of individuals and family offices passionate about exploring alternative investment opportunities in India, with a perspective on the risk and return profile of this asset class.',
     author: 'An EXCLUSIVE NETWORK',
     videoLink: '/investment.jpeg',
     image: true,
@@ -48,7 +48,10 @@ const featureData: FeatureDataModel[] = [
 ]
 export default function Feature() {
   return (
-    <div id="Offerings" className="relative isolate bg-gray-900 pb-32 pt-24 sm:pt-32">
+    <div
+      id="Offerings"
+      className="relative isolate bg-gray-900 pb-32 pt-24 sm:pt-32"
+    >
       <div
         className="absolute inset-x-0 top-1/2 -z-10 -translate-y-1/2 transform-gpu overflow-hidden opacity-30 blur-3xl"
         aria-hidden="true"

@@ -9,7 +9,7 @@ export default function CTA3() {
         <div className="mx-auto max-w-7xl sm:px-6 lg:px-8 py-24 ">
           <div className="relative isolate overflow-hidden bg-gray-900 drop-shadow-sm shadow-pink-100 mx-4 rounded-2xl px-6 py-24 text-center shadow-lg border-t border-white sm:rounded-3xl sm:px-16">
             <h2 className="mx-auto max-w-2xl text-3xl font-bold tracking-tight text-white sm:text-4xl">
-            JOIN A PRIVATE ALTERNATE INVESTMENT COMMUNITY
+            JOIN A PRIVATE ALTERNATIVE INVESTMENT COMMUNITY
             </h2>
             <p className="mx-auto mt-6 max-w-xl text-lg leading-8 text-gray-300">
             Our membership is a diverse group of individuals and family offices passionate about learning alternate investment opportunities in India, share the perspectives about the the risk and return profile of this relatively new asset class.

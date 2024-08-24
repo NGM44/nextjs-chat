@@ -12,6 +12,7 @@ export default function CTAFORWHATSAPP() {
             Diversify Your Portfolio
           </h2>
           <p className="mx-auto mt-6 max-w-xl text-lg leading-8 text-gray-300">
+         
             Join our exclusive community to invest in India’s alternative
             opportunities and diversify your portfolio for risk-adjusted returns
           </p>
