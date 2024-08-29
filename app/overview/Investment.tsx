@@ -122,9 +122,9 @@ const Dashboard = () => {
       className="p-6 max-w-6xl mx-auto bg-gray-900 text-white"
       style={{ fontFamily: 'Arial, sans-serif' }}
     >
-      <h1 className="text-2xl font-bold mb-6">
+      <h2 className="text-2xl font-bold mb-6">
         Investment Opportunity Comparison
-      </h1>
+      </h2>
       <div className="flex flex-col sm:flex-row gap-4 mb-8">
         {data.map(item => (
           <div key={item.name} className="flex-1">

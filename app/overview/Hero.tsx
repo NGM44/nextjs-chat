@@ -77,7 +77,7 @@ export default function HeroPage() {
               </div>
               <h1 className="mt-10 max-w-2xl text-4xl font-bold tracking-tight text-gray-9100 sm:text-6xl">
               XIRR - An Alternative Investment Platform
-                {/* Diversify Your Portfolio */}
+             
               </h1>
               <p className="mt-6 text-lg leading-8 text-gray-200">
               XIRR&apos;s artificial intelligence model combines industry investment expertise to deliver exceptional, strategic results.

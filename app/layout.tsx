@@ -13,7 +13,7 @@ export const metadata = {
     ? new URL(`https://${process.env.VERCEL_URL}`)
     : undefined,
   title: {
-    default: 'THE XIRR',
+    default: 'Compare Alternative Investments on TheXIRR Platform',
     template: `XIRR INVESTMENT AI`
   },
   description: 'An AI-powered Investment Tool to explore alternate Investment.',

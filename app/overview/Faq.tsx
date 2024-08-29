@@ -70,7 +70,7 @@ export default function FAQ() {
         <div className="mx-auto max-w-7xl px-6 py-12 sm:py-12 lg:px-8">
           <div className="mx-auto max-w-4xl divide-y divide-white/10">
             <h2 className="text-2xl font-bold leading-10 tracking-tight text-white">
-              Frequently asked questions
+            Frequently Asked Questions
             </h2>
             <dl className="mt-10 space-y-6 divide-y divide-white/10">
               {faqs.map(faq => (
@@ -79,9 +79,9 @@ export default function FAQ() {
                     <>
                       <dt>
                         <DisclosureButton className="flex w-full items-start justify-between text-left text-white">
-                          <span className="text-base font-semibold leading-7">
+                          <h3 className="text-base font-semibold leading-7">
                             {faq.question}
-                          </span>
+                          </h3>
                           <span className="ml-6 flex h-7 items-center">
                             {open ? (
                               <MinusSmallIcon
