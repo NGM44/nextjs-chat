@@ -17,7 +17,7 @@ export const metadata = {
     default: 'Compare Alternative Investments on TheXIRR Platform',
     template: `XIRR INVESTMENT AI`
   },
-  description: 'An AI-powered Investment Tool to explore alternate Investment.',
+  description: 'Looking for alternative investments? TheXIRR simplifies the process. Compare top-performing alternatives, understand their risks, and make informed decisions.',
   icons: {
     icon: '/favicon.ico',
     shortcut: '/favicon-16x16.png',
