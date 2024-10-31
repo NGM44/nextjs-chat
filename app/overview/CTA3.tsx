@@ -1,6 +1,6 @@
 export default function CTA3() {
     return (
-      <div id="diversify" className="relative isolate bg-gray-900 ">
+      <div id="diversify" className="relative isolate bg-transparent">
         <div
           className="absolute inset-x-0 top-1/2 -z-10 -translate-y-1/2 transform-gpu overflow-hidden opacity-30 blur-3xl"
           aria-hidden="true"

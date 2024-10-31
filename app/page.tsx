@@ -1,37 +1,22 @@
-'use client'
-import React from 'react'
-import HeroPage from './overview/Hero'
-import Feature from './overview/Features'
-import FAQ from './overview/Faq'
-import Footer from './overview/Footer'
-import CTAFORWHATSAPP from './overview/CTA'
-import Dashboard2 from './overview/Investment2'
-import CTA1 from './overview/CTA1'
-import CTA2 from './overview/CTA2'
-import CTA3 from './overview/CTA3'
-import { FloatingDockDemo } from './overview/Social'
+import { Suspense } from 'react'
+import { ParallaxScroll } from './parallexScroll/scroll'
+import { getNocoDBData } from './lib/getData'
 
-const page = () => {
-  return (
-    <div>
-      <HeroPage />
-      {/* <Testimonials /> */}
-      {/* <CTAFORWHATSAPP /> */}
-      {/* <Feature /> */}
-{/* <FloatingDockDemo /> */}
-      <div id="Offerings">
-        <CTA1 />
-        <CTA2 />
-        <CTA3 />
-      </div>
-      {/* <Opportunities /> */}
-      <Dashboard2 />
-
-      <FAQ />
-
-      <Footer />
-    </div>
-  )
+async function NocoDBData() {
+  const data = await getNocoDBData()
+  return <ParallaxScroll companies2={data} />
 }
 
-export default page
+export default function ParallaxScrollDemo() {
+  return (
+    <Suspense
+      fallback={
+        <div className="flex justify-center items-center h-64">
+          <div className="animate-spin rounded-full h-8 w-8 border-b-2 border-blue-500"></div>
+        </div>
+      }
+    >
+      <NocoDBData />
+    </Suspense>
+  )
+}
