@@ -15,24 +15,17 @@ const TabSelector: React.FC<TabSelectorProps> = ({
     'Peer-to-Peer Lending',
     'Litigation Finance',
     'Renewable Energy',
-    'Alternative Investments',
     'Invoice Discounting',
     'Gold Investment',
-    'Investment Platforms',
     'Other'
   ],
   selectedTabs,
   setSelectedTabs
 }) => {
-  // State
-  //   const [selectedTabs, setSelectedTabs] = useState<string[]>([])
   const [showLeftArrow, setShowLeftArrow] = useState<boolean>(false)
   const [showRightArrow, setShowRightArrow] = useState<boolean>(true)
-
-  // Refs
   const scrollContainerRef = useRef<HTMLDivElement>(null)
 
-  // Handlers
   const toggleTab = (tab: string) => {
     const newTabs = selectedTabs.includes(tab)
       ? selectedTabs.filter((t: any) => t !== tab)
@@ -63,29 +56,35 @@ const TabSelector: React.FC<TabSelectorProps> = ({
     setSelectedTabs([])
   }
 
-  // Animation variants
+  // Updated animation variants with smoother transitions
   const tagVariants = {
-    initial: { scale: 0.8, opacity: 0 },
-    animate: { scale: 1, opacity: 1 },
-    exit: { scale: 0.8, opacity: 0 }
-  }
-
-  const contentVariants = {
-    initial: { opacity: 0, y: 20 },
-    animate: { opacity: 1, y: 0 },
-    transition: { duration: 0.3 }
+    initial: { 
+      scale: 0.95,
+      opacity: 0,
+      transition: { duration: 0.2 }
+    },
+    animate: { 
+      scale: 1,
+      opacity: 1,
+      transition: { duration: 0.2 }
+    },
+    exit: { 
+      scale: 0.95,
+      opacity: 0,
+      transition: { duration: 0.15 }
+    }
   }
 
   return (
     <div className="w-full max-w-7xl mx-auto p-4 bg-transparent">
       <div className="bg-transparent rounded-xl shadow-2xl border border-purple-500/20">
-        {/* Selected Tags Display */}
-        <AnimatePresence>
+        <AnimatePresence mode="wait">
           {selectedTabs.length > 0 && (
             <motion.div
               initial={{ opacity: 0, height: 0 }}
               animate={{ opacity: 1, height: 'auto' }}
               exit={{ opacity: 0, height: 0 }}
+              transition={{ duration: 0.2, ease: "easeInOut" }}
               className="flex gap-2 p-3 border-b border-purple-500/20 overflow-x-auto"
             >
               {selectedTabs.map(tab => (
@@ -95,6 +94,7 @@ const TabSelector: React.FC<TabSelectorProps> = ({
                   initial="initial"
                   animate="animate"
                   exit="exit"
+                  layout
                   className="inline-flex items-center gap-1 px-3 py-1 rounded-full 
                            bg-gradient-to-r from-purple-600/20 to-blue-600/20 
                            text-white text-sm border border-purple-500/30 whitespace-nowrap"
@@ -112,6 +112,7 @@ const TabSelector: React.FC<TabSelectorProps> = ({
               <motion.button
                 initial={{ opacity: 0 }}
                 animate={{ opacity: 1 }}
+                transition={{ duration: 0.2 }}
                 className="text-xs text-gray-400 hover:text-white transition-colors whitespace-nowrap"
                 onClick={clearAll}
               >
@@ -121,15 +122,14 @@ const TabSelector: React.FC<TabSelectorProps> = ({
           )}
         </AnimatePresence>
 
-        {/* Scrollable Tabs with Arrows */}
         <div className="relative bg-gray-800/50 rounded-xl backdrop-blur-lg">
-          {/* Left Arrow */}
           <AnimatePresence>
             {showLeftArrow && (
               <motion.button
                 initial={{ opacity: 0 }}
                 animate={{ opacity: 1 }}
                 exit={{ opacity: 0 }}
+                transition={{ duration: 0.2 }}
                 onClick={() => scroll('left')}
                 className="absolute left-0 top-1/2 -translate-y-1/2 z-10 p-2 bg-gray-800/90 
                          text-white rounded-r-lg shadow-lg backdrop-blur-sm
@@ -141,13 +141,13 @@ const TabSelector: React.FC<TabSelectorProps> = ({
             )}
           </AnimatePresence>
 
-          {/* Right Arrow */}
           <AnimatePresence>
             {showRightArrow && (
               <motion.button
                 initial={{ opacity: 0 }}
                 animate={{ opacity: 1 }}
                 exit={{ opacity: 0 }}
+                transition={{ duration: 0.2 }}
                 onClick={() => scroll('right')}
                 className="absolute right-0 top-1/2 -translate-y-1/2 z-10 p-2 bg-gray-800/90 
                          text-white rounded-l-lg shadow-lg backdrop-blur-sm
@@ -159,7 +159,6 @@ const TabSelector: React.FC<TabSelectorProps> = ({
             )}
           </AnimatePresence>
 
-          {/* Scrollable Container */}
           <div
             ref={scrollContainerRef}
             onScroll={handleScroll}
@@ -177,6 +176,7 @@ const TabSelector: React.FC<TabSelectorProps> = ({
                 initial={{ opacity: 0.9 }}
                 whileHover={{ scale: 1.05, opacity: 1 }}
                 whileTap={{ scale: 0.95 }}
+                transition={{ duration: 0.2, ease: "easeInOut" }}
                 className={`
                   relative flex-shrink-0 px-4 py-2 rounded-lg text-sm font-medium 
                   transition-all duration-300 whitespace-nowrap
@@ -195,6 +195,7 @@ const TabSelector: React.FC<TabSelectorProps> = ({
                   <motion.div
                     className="absolute -bottom-1 left-1/2 w-1 h-1 bg-white rounded-full"
                     layoutId={`indicator-${tab}`}
+                    transition={{ duration: 0.2, ease: "easeInOut" }}
                   />
                 )}
               </motion.button>

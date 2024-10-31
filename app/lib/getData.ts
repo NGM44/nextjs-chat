@@ -2,14 +2,14 @@
 export async function getNocoDBData() {
   try {
     const response = await fetch(
-      'https://app.nocodb.com/api/v2/tables/m1m464k0kjjd8oo/records?offset=0&limit=25&where=&viewId=vwmg3gze48r8fswj',
+      'https://app.nocodb.com/api/v2/tables/m1m464k0kjjd8oo/records?offset=0&limit=100&where=&viewId=vwmg3gze48r8fswj',
       {
         headers: {
           'xc-token': 'ORo0g8UdAc8MvTzc6AtAe7ZkUnFG2MvkRrmprNCB'
         },
         // Enable caching
         next: {
-          revalidate: 3600 // Revalidate every hour
+          revalidate: 1 // Revalidate every hour
         }
       }
     )

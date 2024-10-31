@@ -1,12 +1,9 @@
 export default function CTA1() {
   return (
     <div id="diversify" className="bg-transparent">
-   
-
       <div className="mx-auto max-w-7xl sm:px-6 lg:px-8 py-24 ">
         <div className="relative isolate overflow-hidden bg-gray-900 drop-shadow-sm shadow-orange-100 mx-4 rounded-2xl px-6 py-24 text-center shadow-lg border-t border-white sm:rounded-3xl sm:px-16">
           <h2 className="mx-auto max-w-4xl text-3xl font-bold tracking-tight text-white sm:text-4xl">
-            
             DIVERSIFY YOUR PORTFOLIO THROUGH ALTERNATIVE OPPORTUNITIES
           </h2>
 
