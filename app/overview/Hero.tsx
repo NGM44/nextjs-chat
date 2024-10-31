@@ -2,7 +2,7 @@ import { SketchLogoIcon } from '@radix-ui/react-icons'
 
 export default function HeroPage() {
   return (
-    <div className="bg-transparent">
+    <div className="bg-transparent pt-10">
       <div className="relative isolate">
         <svg
           className="absolute inset-0 -z-10 h-full w-full stroke-gray-900 [mask-image:radial-gradient(100%_100%_at_top_right,white,transparent)]"
