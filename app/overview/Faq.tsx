@@ -41,8 +41,8 @@ const faqs = [
 
 export default function FAQ() {
   return (
-    <div id="faq" className="relative isolate bg-gray-900">
-      <div
+    <div id="faq" className="relative isolate bg-transparent">
+      {/* <div
         className="absolute inset-x-0 top-1/2 -z-10 -translate-y-1/2 transform-gpu overflow-hidden opacity-30 blur-3xl"
         aria-hidden="true"
       >
@@ -65,7 +65,7 @@ export default function FAQ() {
               'polygon(74.1% 44.1%, 100% 61.6%, 97.5% 26.9%, 85.5% 0.1%, 80.7% 2%, 72.5% 32.5%, 60.2% 62.4%, 52.4% 68.1%, 47.5% 58.3%, 45.2% 34.5%, 27.5% 76.7%, 0.1% 64.9%, 17.9% 100%, 27.6% 76.8%, 76.1% 97.7%, 74.1% 44.1%)'
           }}
         />
-      </div>
+      </div> */}
       <div className="bg-transparent">
         <div className="mx-auto max-w-7xl px-6 py-12 sm:py-12 lg:px-8">
           <div className="mx-auto max-w-4xl divide-y divide-white/10">

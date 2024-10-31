@@ -23,17 +23,17 @@ const featureData: FeatureDataModel[] = [
     image: true,
     color: 'text-[#79C6F0]'
   },
-  {
-    heading: 'MEET YOUR AI CONCIERGE',
-    description:
-      'Use XIRR AI for bespoke answers to your investment strategies in alternative assets, designed to boost your confidence in your alternative investment strategy',
-    author: 'YOUR NEW SUPERPOWER',
-    videoLink:
-      'https://framerusercontent.com/assets/wWzW6Xt0kZViREVLEpFEXZUrQ8.mp4',
-    showLeft: false,
-    image: false,
-    color: 'text-[#F1953F]'
-  },
+  // {
+  //   heading: 'MEET YOUR AI CONCIERGE',
+  //   description:
+  //     'Use XIRR AI for bespoke answers to your investment strategies in alternative assets, designed to boost your confidence in your alternative investment strategy',
+  //   author: 'YOUR NEW SUPERPOWER',
+  //   videoLink:
+  //     'https://framerusercontent.com/assets/wWzW6Xt0kZViREVLEpFEXZUrQ8.mp4',
+  //   showLeft: false,
+  //   image: false,
+  //   color: 'text-[#F1953F]'
+  // },
 
   {
     heading: 'JOIN A PRIVATE ALTERNATIVE INVESTMENT COMMUNITY',

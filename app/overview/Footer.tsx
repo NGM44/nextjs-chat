@@ -5,13 +5,13 @@ import { SketchLogoIcon } from '@radix-ui/react-icons'
 const navigation = {
   solutions: [
     { name: 'Marketing', href: '#' },
-   
+
     { name: 'Insights', href: '#' }
   ],
   support: [
     { name: 'Pricing', href: '#' },
     { name: 'Documentation', href: '#' },
-    { name: 'Guides', href: '#' },
+    { name: 'Guides', href: '#' }
   ],
   company: [
     { name: 'About', href: '#' },
@@ -92,199 +92,57 @@ const navigation = {
 
 export default function Footer() {
   return (
-    <footer className="bg-gray-900" aria-labelledby="footer-heading">
+    <footer className="bg-transparent" aria-labelledby="footer-heading">
       <h2 id="footer-heading" className="sr-only">
         Footer
       </h2>
       <div className="mx-auto max-w-7xl px-6 pb-8 pt-16 sm:pt-24 lg:px-8 lg:pt-32">
-        {/* <div className="xl:grid xl:grid-cols-3 xl:gap-8">
-          <div className="space-y-8">
-            <div className="flex items-center justify-start space-x-2">
-              <a
-                href="overview"
-                target="_blank"
-                className={cn(buttonVariants())}
-              >
-                <SketchLogoIcon className="mr-2" />
-                <span className="hidden sm:block font-semibold">THE XIRR</span>
-                <span className="sm:hidden">THE XIRR</span>
-              </a>
-            </div>
-            <p className="text-sm leading-6 text-gray-300">
-              An AI-powered Investment Tool to explore alternate Investment.
-            </p>
-            <div className="flex space-x-6">
-              {navigation.social.map(item => (
-                <a
-                  key={item.name}
-                  href={item.href}
-                  className="text-gray-500 hover:text-gray-400"
-                >
-                  <span className="sr-only">{item.name}</span>
-                  <item.icon className="h-6 w-6" aria-hidden="true" />
-                </a>
-              ))}
-            </div>
-          </div>
-          <div className="mt-16 grid grid-cols-2 gap-8 xl:col-span-2 xl:mt-0">
-            <div className="md:grid md:grid-cols-2 md:gap-8">
-              <div>
-                <h3 className="text-sm font-semibold leading-6 text-white">
-                  Solutions
-                </h3>
-                <ul role="list" className="mt-6 space-y-4">
-                  {navigation.solutions.map(item => (
-                    <li key={item.name}>
-                      <a
-                        href={item.href}
-                        className="text-sm leading-6 text-gray-300 hover:text-white"
-                      >
-                        {item.name}
-                      </a>
-                    </li>
-                  ))}
-                </ul>
-              </div>
-              <div className="mt-10 md:mt-0">
-                <h3 className="text-sm font-semibold leading-6 text-white">
-                  Support
-                </h3>
-                <ul role="list" className="mt-6 space-y-4">
-                  {navigation.support.map(item => (
-                    <li key={item.name}>
-                      <a
-                        href={item.href}
-                        className="text-sm leading-6 text-gray-300 hover:text-white"
-                      >
-                        {item.name}
-                      </a>
-                    </li>
-                  ))}
-                </ul>
-              </div>
-            </div>
-            <div className="md:grid md:grid-cols-2 md:gap-8">
-              <div>
-                <h3 className="text-sm font-semibold leading-6 text-white">
-                  Company
-                </h3>
-                <ul role="list" className="mt-6 space-y-4">
-                  {navigation.company.map(item => (
-                    <li key={item.name}>
-                      <a
-                        href={item.href}
-                        className="text-sm leading-6 text-gray-300 hover:text-white"
-                      >
-                        {item.name}
-                      </a>
-                    </li>
-                  ))}
-                </ul>
-              </div>
-              <div className="mt-10 md:mt-0">
-                <h3 className="text-sm font-semibold leading-6 text-white">
-                  Legal
-                </h3>
-                <ul role="list" className="mt-6 space-y-4">
-                  {navigation.legal.map(item => (
-                    <li key={item.name}>
-                      <a
-                        href={item.href}
-                        className="text-sm leading-6 text-gray-300 hover:text-white"
-                      >
-                        {item.name}
-                      </a>
-                    </li>
-                  ))}
-                </ul>
-              </div>
-            </div>
-          </div>
-        </div> */}
         <div className="mt-16 border-t border-white/10 pt-8 sm:mt-20 lg:mt-24">
           <p className="text-xs leading-5 text-gray-400">
             &copy; 2024 THE XIRR, Inc. All rights reserved.
           </p>
         </div>
         <div className="mt-24">
-          <p className='text-[13px] text-gray-300'>Risk Disclaimer</p>
-<p className='text-[11px] text-gray-500'>
-The information provided on this website is for general informational purposes only and is not intended to be investment, legal, tax, or financial advice. All content is provided &apos;as is&apos; without any warranties, express or implied. While we strive to ensure that the information on this website is accurate and up-to-date, we make no representations or warranties of any kind about the completeness, accuracy, reliability, suitability, or availability with respect to the website or the information, products, services, or related graphics contained on the website.The content of this website is directed only at persons residing in India and is not intended for distribution to, or use by, any person in any jurisdiction where such distribution or use would be contrary to local law or regulation.Our advisory services are based on personal opinions and do not constitute an offer to buy or sell any securities or other financial instruments. Users are encouraged to seek advice from an independent financial advisor before making any investment decisions.We do not guarantee any specific outcomes or results from our investment advice or strategies. All decisions made by users are their sole responsibility.We may have interests or positions in the securities mentioned on this website, which could be considered a conflict of interest. These interests will be disclosed where appropriate.
-User Responsibility. Investing in financial markets involves risk, including the potential loss of principal. Past performance is not indicative of future results. It is important to do your own analysis before making any investment based on your own personal circumstances. The value of investments can go down as well as up due to market volatility and other factors. You may not get back the amount you originally invested.Users should independently verify all information before making any investment decisions. Reliance on any information provided on this website is solely at your own risk. You are solely responsible for your own investment decisions. We do not accept any liability for any loss or damage resulting from your reliance on the information provided on this website. 
-Contact Information. If you have any questions or concerns about our disclaimers, please contact us at <span className='text-white'>buildwealth@thexirr.com.</span>
-</p>
-
-          {/* <p className="text-[13px] text-gray-300">Risk Disclaimer</p>
+          <p className="text-[13px] text-gray-300">Risk Disclaimer</p>
           <p className="text-[11px] text-gray-500">
-            The content in our services, and on this website, is intended to be
-            used for educational, research and informational purposes only. We
-            are an educational platform providing analytical tools for
-            evaluating investments. We make no representations or warranties as
-            to the accuracy, completeness, suitability or validity of any
-            analytical tools, information or content provided in our services or
-            on this website. We are not a broker/dealer or an investment
-            advisor, and this is not a place for the giving or receiving of
-            financial advice, advice concerning investment decisions or tax or
-            legal advice. We are not regulated by any financial services
-            regulatory agencies. No content on the site constitutes, nor should
-            it be understood as constituting, a recommendation to enter in any
-            investment. We do not provide personalized recommendations or views
-            as to whether an investment approach is suited to the financial
-            needs of a specific individual, including you. It is very important
-            to do your own analysis and due diligence before making any
-            investment based on your own personal circumstances. Past
-            performance, whether actual or indicated by historical results, is
-            no guarantee of future performance or success. There is a
-            possibility that you may sustain a loss equal to or greater than
-            your entire investment regardless of which asset class you invest
-            in, therefore, you should not invest or risk money that you cannot
-            afford to lose. Accordingly, we will not be liable, whether in
-            contract, tort, including negligence or otherwise, in respect of any
-            damage, expense or other loss you may suffer arising out of
-            information, or any reliance you may place upon information, you
-            receive from our services or this website.
+            The information provided on this website is for general
+            informational purposes only and is not intended to be investment,
+            legal, tax, or financial advice. All content is provided &apos;as
+            is&apos; without any warranties, express or implied. While we strive
+            to ensure that the information on this website is accurate and
+            up-to-date, we make no representations or warranties of any kind
+            about the completeness, accuracy, reliability, suitability, or
+            availability with respect to the website or the information,
+            products, services, or related graphics contained on the website.The
+            content of this website is directed only at persons residing in
+            India and is not intended for distribution to, or use by, any person
+            in any jurisdiction where such distribution or use would be contrary
+            to local law or regulation.Our advisory services are based on
+            personal opinions and do not constitute an offer to buy or sell any
+            securities or other financial instruments. Users are encouraged to
+            seek advice from an independent financial advisor before making any
+            investment decisions.We do not guarantee any specific outcomes or
+            results from our investment advice or strategies. All decisions made
+            by users are their sole responsibility.We may have interests or
+            positions in the securities mentioned on this website, which could
+            be considered a conflict of interest. These interests will be
+            disclosed where appropriate. User Responsibility. Investing in
+            financial markets involves risk, including the potential loss of
+            principal. Past performance is not indicative of future results. It
+            is important to do your own analysis before making any investment
+            based on your own personal circumstances. The value of investments
+            can go down as well as up due to market volatility and other
+            factors. You may not get back the amount you originally
+            invested.Users should independently verify all information before
+            making any investment decisions. Reliance on any information
+            provided on this website is solely at your own risk. You are solely
+            responsible for your own investment decisions. We do not accept any
+            liability for any loss or damage resulting from your reliance on the
+            information provided on this website. Contact Information. If you
+            have any questions or concerns about our disclaimers, please contact
+            us at <span className="text-white">buildwealth@thexirr.com.</span>
           </p>
-        </div>{' '}
-        <div className="mt-8">
-          <p className="text-[13px] text-gray-300"> Financial Disclaimer</p>
-          <p className="text-[11px] text-gray-500">
-            Financial investing and trading of securities, stocks, options,
-            futures, currency and cryptocurrency markets may not be suitable for
-            everyone and may involve the risk of losing part or all of your
-            money. XIRR is intended to be used for educational and informational
-            purposes only. We are not a broker/dealer or an investment advisor,
-            and this is not a place for the giving or receiving of financial
-            advice, advice concerning investment decisions, or tax or legal
-            advice. We are not regulated by any financial services regulatory
-            agencies. Past performance, whether actual or indicated by
-            historical results, is no guarantee of future performance or
-            success. Hypothetical performance results and illustrative analysis
-            have many inherent limitations and no representation is being made
-            that you will, or are likely, to achieve profits or losses similar
-            to those shown in this Service and on our Website. Before
-            undertaking any trading program, you should consult a qualified
-            financial professional or registered financial advisor. Please
-            consider carefully whether any investment is suitable for you in
-            light of your financial condition and ability to bear financial
-            risks. Under no circumstances shall we be liable for any loss or
-            damage you or anyone else incurs as a result of any investment
-            activity that you, or anyone else, engages in based upon any
-            information or the content you receive through our Website or our
-            Services. By using the XIRR Services and Website platform, you agree
-            to this disclaimer, and acknowledge and accept the risks involved in
-            trading securities, stocks, options, futures, currency and
-            cryptocurrency markets, and are also acknowledging and agreeing that
-            i) you, and not THE XIRR, Inc., are solely responsible for any
-            losses, financial or otherwise, as a result of using this Service,
-            ii) THE XIRR, Inc. shall under no circumstances be liable for
-            any lost profits, lost opportunities, misstatements, or errors
-            contained within this Website or our Services, and iii)
-            THE XIRR, Inc. will not be held liable for data accuracy,
-            unavailability of our Service, or any special or consequential
-            damages that result from the use of, or the inability to use, any or
-            all of the content included on our Website or in our Services.
-          </p>*/}
-        </div> 
+        </div>
       </div>
     </footer>
   )
